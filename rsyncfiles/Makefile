@@ -14,3 +14,6 @@ add:
 
 update:
 	$(rsyncfiles) add -u
+
+diff:
+	$(rsyncfiles) diff
