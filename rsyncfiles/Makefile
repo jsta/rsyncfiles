@@ -11,3 +11,6 @@ status:
 
 add:
 	$(rsyncfiles) add -f $(rsyncfilters)
+
+update:
+	$(rsyncfiles) add -u
