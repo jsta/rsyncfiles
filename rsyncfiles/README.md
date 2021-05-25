@@ -2,13 +2,9 @@
 
 ### TODO
 
-* [ ] track all .rsync-filter files in git contained in .rsync folder
+* [x] create a file holding the path to all .rsync-filter files
 
-* [ ] create a file holding the path to all .rsync-filter files
-
-```
-find ~/ -type f -name ".rsync-filter"
-```
+* [x] track all .rsync-filter files
 
 * [ ] create a bash program to archive (zip) the files pointed to by a given .rsync-filter file
 
@@ -31,4 +27,3 @@ rsyncfiles update-index --skip-worktree README.md
 ### References
 
 https://unix.stackexchange.com/questions/574563/is-there-such-thing-as-an-rsyncignore-file#comment1069834_574563
-
