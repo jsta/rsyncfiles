@@ -11,7 +11,7 @@ do
     # echo "target: $target"
 
     echo "zip $(dirname "$target")/${target##*.}.zip $target"
-    # eval "zip $(dirname "$target")/${target##*.}.zip $target"
+    eval "zip $(dirname "$target")/${target##*.}.zip $target"
 done
 
 unset IFS
