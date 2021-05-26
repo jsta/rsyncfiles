@@ -1,20 +1,14 @@
 ## rsyncfiles
 
-### TODO
-
-* [x] create a file holding the path to all .rsync-filter files
-
-* [x] track all .rsync-filter files
-
-* [x] create a bash program to archive (zip) the files pointed to by a given .rsync-filter file
+Manage .rsync-filter files with tools for finding, listing, and archiving targets.
 
 ### Setup
 
 ```
-git clone --bare git@github.com:jsta/.rsync.git $HOME/.rsync
+git clone git@github.com:jsta/rsyncfiles.git
+git clone --bare git@github.com:jsta/rsyncfiles.git $HOME/.rsync
 alias rsyncfiles='git --git-dir=$HOME/.rsync/ --work-tree=$HOME'
 rsyncfiles config --local status.showUntrackedFiles no
-# rsyncfiles config --local alias.github '!git add -u && git commit -m "Update rsyncfiles at $(date -u)" && git push'
 rsyncfiles config --local pull.rebase true
 rsyncfiles reset --hard
 
@@ -33,7 +27,7 @@ make rf_list
 2. Print the contents of a target file
 
 ```
-make file=/home/julie/Documents/.rsync-filter rf_print
+make file=.rsync-filter rf_print
 ```
 
 3. Zip filtered files

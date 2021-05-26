@@ -4,7 +4,6 @@ rsyncfiles := git --git-dir=$$HOME/.rsync/ --work-tree=$$HOME
 
 rsyncfilters_raw := rsyncfilters.txt
 rsyncfilters := $(shell cat ${rsyncfilters_raw})
-# rsyncfilters_single = $(shell echo ${rsyncfilters[1]})
 
 # create list of .rsync-filter files
 rsyncfilters.txt:
