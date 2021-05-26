@@ -30,7 +30,7 @@ make rf_list
 make file=.rsync-filter rf_print
 ```
 
-3. Zip filtered files
+3. Zip filtered files (this will only work if rules have a leading slash)
 ```
 make file=.rsync-filter rf_zip
 ```
