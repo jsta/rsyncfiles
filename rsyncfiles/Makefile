@@ -17,3 +17,7 @@ update:
 
 diff:
 	$(rsyncfiles) diff
+
+push:
+	$(rsyncfiles) push
+

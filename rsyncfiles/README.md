@@ -6,9 +6,7 @@
 
 * [x] track all .rsync-filter files
 
-* [ ] create a bash program to archive (zip) the files pointed to by a given .rsync-filter file
-
-* [ ] symlink to bin folder
+* [x] create a bash program to archive (zip) the files pointed to by a given .rsync-filter file
 
 ### Setup
 
@@ -23,6 +21,10 @@ rsyncfiles reset --hard
 rm ~/README.md
 rsyncfiles update-index --skip-worktree README.md
 ```
+
+### Usage
+
+
 
 ### References
 

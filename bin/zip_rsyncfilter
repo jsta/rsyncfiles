@@ -1,0 +1,20 @@
+#!/bin/bash
+IFS=$'\n'       # make newlines the only separator
+
+FILENAME=$1
+LINES=$(cat $FILENAME)
+
+for LINE in $LINES
+do
+    str="$LINE"
+    target=$(echo "$str" | cut -c4-)    
+    echo "target: $target"
+
+    # dirname = $(dirname "$target")
+    # dirname = $(dirname "$target")
+    # echo $(dirname "$target")
+    echo "zip $(dirname "$target")/${target##*.}.zip $target"
+    eval "zip $(dirname "$target")/${target##*.}.zip $target"
+done
+
+unset IFS
